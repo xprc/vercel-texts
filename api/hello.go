@@ -1,7 +1,13 @@
-package main
+package handler
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+	"time"
+)
 
-func main() {
-   fmt.Println("Hello, World!")
+func Handler(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Hello, World!")
+	//fmt.Fprintf("Hello, World!")
 }
+
